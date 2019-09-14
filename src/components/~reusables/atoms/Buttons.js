@@ -5,26 +5,29 @@ import { white, theme_primary } from '../variables/colors';
 export const Button = styled.button`
   min-height: 5rem;
   padding: ${normal_space} ${large_space};
-  font-size: inherit;
+  font-size: 30px;
   font-weight: 600;
+  width: 200px;
+  margin: auto auto;
   background-color: ${white};
   border: none;
   outline: none;
   margin-bottom: ${normal_space};
   border-radius: ${small_space};
-  box-shadow: 0 .8rem 2.5rem 0 rgba(40, 51, 63, .11);
+  box-shadow: 0 0.8rem 2.5rem 0 rgba(40, 51, 63, 0.11);
   transition: all 100ms ease-in-out;
   cursor: pointer;
-  
+
   &:active {
-    opacity: .8;
-    box-shadow: 0 6px 10px 0 rgba(40, 51, 63, .11);
+    opacity: 0.8;
+    box-shadow: 0 6px 10px 0 rgba(40, 51, 63, 0.11);
   }
 `;
 
 export const ButtonPrimary = styled(Button)`
   background-color: ${theme_primary};
   color: ${white};
+  text-decoration: none;
 `;
 
 export const TextButton = styled(Button)`
@@ -33,7 +36,7 @@ export const TextButton = styled(Button)`
   padding: ${normal_space};
 
   &:active {
-    opacity: .8;
+    opacity: 0.8;
     box-shadow: unset;
   }
 `;
