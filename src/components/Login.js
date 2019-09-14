@@ -2,8 +2,9 @@ import React from 'react';
 import { View } from './~reusables/atoms/View';
 import { H2, Text } from './~reusables/atoms/Text';
 import { ButtonPrimary } from './~reusables/atoms/Buttons';
-import { small_space } from './~reusables/variables/spacing';
+import { Form } from './~reusables/molecules/Form';
 import { Container } from './~reusables/atoms/Container';
+import { Input } from './~reusables/atoms/Inputs';
 import { Link } from 'react-router-dom';
 import {
   theme_primary,
@@ -37,6 +38,10 @@ const Login = () => {
         width="50%"
         direction="column"
       >
+        <Form>
+          <Input type="text" placeholder="Username" />
+          <Input type="password" placeholder="Password" />
+        </Form>
         <ButtonPrimary light>
           <Link to="/login">Log in</Link>
         </ButtonPrimary>

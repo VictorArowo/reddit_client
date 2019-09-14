@@ -11,17 +11,22 @@ export const Input = styled.input`
   border-radius: 10px;
   font-size: ${base_font_size};
   font-weight: 600;
-  border: 2px solid rgba(40, 51, 63, .4);
+  border: 2px solid white;
   background-color: unset;
+  color: white;
   outline: none;
   transition: all 200ms ease-in-out;
-    &::placeholder {
-      color: rgba(40, 51,63, .4);
-      opacity: 1;
-    }
 
-    &:focus, &:checked {
-      border: 2px solid ${theme_secondary};
-      box-shadow: 0 0 6px 0 rgba(19,82,221,0.37);
-    }
+  ${props => (props.placeholder ? `placeholder: ${props.placeholder};` : null)}
+
+  &::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  &:focus,
+  &:checked {
+    border: 2px solid ${theme_secondary};
+    box-shadow: 0 0 6px 0 rgba(19, 82, 221, 0.37);
+  }
 `;
