@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+text-align: center;
   display: flex;
-
+  margin: 0px auto;
   ${props => (props.direction ? `flex-direction: ${props.direction};` : null)}
   ${props => (props.vCenter ? `justify-content: center;` : null)}
   ${props => (props.column ? `flex-direction: column;` : null)}

@@ -38,10 +38,12 @@ const Home = () => {
         direction="column"
       >
         <Text light margin="auto">
-          a standalone reddit client built from the ground up
+          a lightweight reddit client
         </Text>
         <ButtonPrimary light>
-          <Link to="/login">Log in</Link>
+          <a href="https://www.reddit.com/api/v1/authorize?client_id=GQHIk4x1kGDG4g&response_type=code&state=RANDOM_STRING&redirect_uri=http://localhost:3000/frontpage&duration=permanent&scope=*">
+            Login
+          </a>
         </ButtonPrimary>
 
         <Text light margin={`auto auto ${small_space} auto`}>
